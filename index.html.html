@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ganpati Bappa Morya — For Sanika ❤️</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:radial-gradient(circle at top,#4b1717,#18090d 58%,#090407);color:#fff0d1}
+body{overflow-x:hidden}
+.hidden{display:none!important}
+.screen{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px 14px;position:relative;overflow:hidden}
+.intro-card,.final-card{width:min(720px,94vw);background:rgba(48,12,16,.88);border:1px solid rgba(255,209,102,.28);box-shadow:0 20px 70px rgba(0,0,0,.45),0 0 40px rgba(255,150,50,.08);border-radius:28px;padding:34px;text-align:center;position:relative;z-index:5}
+.glow{position:absolute;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(255,177,66,.2),transparent 68%);filter:blur(12px)}
+.om{font-size:68px;color:#ffd166;text-shadow:0 0 28px rgba(255,209,102,.6)}
+.eyebrow{letter-spacing:2px;text-transform:uppercase;font-size:12px;color:#e6b99b}
+h1{font-size:clamp(34px,7vw,62px);margin:10px 0;color:#ffd166}
+.subtitle{font-size:clamp(18px,4vw,25px)}
+.highlight{color:#ffd166;font-weight:700}
+.message{font-size:18px;line-height:1.75;color:#f5d9c7;max-width:600px;margin:22px auto}
+.btn{border:0;border-radius:999px;padding:14px 25px;background:linear-gradient(135deg,#ffb703,#fb8500);color:#351006;font-size:17px;font-weight:800;cursor:pointer;box-shadow:0 10px 28px rgba(251,133,0,.28);transition:.2s transform}
+.btn:hover{transform:translateY(-2px)}
+.hint{margin-top:13px;font-size:13px;color:#cdaea8}
+.puja-wrap{width:min(900px,96vw);text-align:center;position:relative;z-index:3}
+.top-title{font-size:clamp(28px,6vw,46px);color:#ffd166;font-weight:800;margin-bottom:5px}
+.top-sub{color:#e5b9a6;margin-bottom:20px}
+.temple{background:linear-gradient(180deg,rgba(74,22,25,.9),rgba(30,8,14,.96));border:1px solid rgba(255,209,102,.2);border-radius:30px;padding:18px 12px 25px;min-height:590px;box-shadow:0 20px 55px rgba(0,0,0,.35)}
+.toran{font-size:26px;letter-spacing:4px;margin-bottom:10px}
+.arch{height:390px;width:min(510px,92vw);margin:auto;border:10px solid #8b4a31;border-bottom-width:18px;border-radius:250px 250px 35px 35px;position:relative;background:radial-gradient(circle at center,#6c2724,#351117 65%,#210a10);box-shadow:inset 0 0 50px rgba(255,185,80,.08)}
+.spark{position:absolute;width:7px;height:7px;background:#ffd166;border-radius:50%;box-shadow:0 0 14px #ffd166;animation:twinkle 1.7s infinite alternate}
+@keyframes twinkle{from{opacity:.25;transform:scale(.6)}to{opacity:1;transform:scale(1.5)}}
+.ganesha-image-wrap{position:absolute;left:50%;top:49%;transform:translate(-50%,-50%);width:min(340px,75%);z-index:3;animation:floatGanesh 4s ease-in-out infinite;filter:drop-shadow(0 16px 26px rgba(0,0,0,.45))}
+.ganesha-image{display:block;width:100%;height:auto;max-height:335px;object-fit:contain;border-radius:24px}
+.image-fallback{display:none;align-items:center;justify-content:center;font-size:90px;height:220px}
+@keyframes floatGanesh{50%{transform:translate(-50%,-53%)}}
+.modak{position:absolute;font-size:30px;z-index:4;animation:modakFloat 3s ease-in-out infinite}
+.m1{left:9%;bottom:19%}.m2{right:9%;bottom:19%;animation-delay:1s}
+@keyframes modakFloat{50%{transform:translateY(-8px) rotate(4deg)}}
+.diya-row{display:flex;justify-content:center;gap:34px;margin-top:14px}
+.diya{font-size:48px;cursor:pointer;filter:grayscale(.4);transition:.2s;user-select:none}
+.diya.lit{filter:drop-shadow(0 0 13px #ffb703);animation:diyaPulse 1s infinite alternate}
+@keyframes diyaPulse{to{transform:scale(1.08)}}
+.status{margin-top:8px;color:#ffdca3;min-height:24px}
+.final-card{margin:24px auto 0;max-width:760px;line-height:1.7}
+.final-card h2{color:#ffd166;font-size:30px}
+.bappa{font-size:24px;color:#ffd166;margin-top:18px}
+.footer{margin-top:22px;color:#b9968d;font-size:13px}
+.petal{position:fixed;top:-40px;z-index:2;pointer-events:none;animation:fall linear forwards}
+@keyframes fall{to{transform:translate(var(--x),110vh) rotate(540deg)}}
+}
+.aarti-chorus{color:#ffd166;font-weight:bold;margin:16px 0!important}
+@media(max-width:600px){.intro-card,.final-card{padding:25px 16px;border-radius:22px}.message{font-size:16px}.arch{height:350px;width:min(380px,92vw);border-width:9px}.ganesha-image-wrap{width:min(300px,78%)}.ganesha-image{max-height:295px}.diya-row{gap:20px}.diya{font-size:40px}.temple{min-height:535px}.toran{font-size:21px}.modak{font-size:23px}}
+</style>
+</head>
+<body>
+<audio id="devotionalAudio" preload="auto" loop>
+  <source src="aarti.mp3" type="audio/mpeg">
+</audio>
+<div class="petals" id="petals"></div>
+
+<section class="screen" id="welcome">
+  <div class="glow"></div>
+  <div class="intro-card">
+    <div class="om">ॐ</div>
+    <div class="eyebrow">A little virtual celebration</div>
+    <h1>Ganpati Bappa Morya!</h1>
+    <div class="subtitle">For <span class="highlight">Sanika Deshpande</span> ❤️</div>
+    <p class="message">This Ganesh Chaturthi, you are away from home because of your <span class="highlight">CDAC journey</span>.<br><br>You may have missed the Ganpati Puja at home, but <span class="highlight">Bappa's blessings don't need a train ticket to reach you.</span> 🐘🙏<br><br>So here's a tiny piece of home, made especially for you.</p>
+    <button class="btn" id="beginBtn">🪔 Begin Puja</button>
+    <div class="hint">Devotional audio starts when you press Begin Puja 🎵</div>
+  </div>
+</section>
+
+<section class="screen hidden" id="puja">
+  <div class="puja-wrap">
+    <div class="top-title">🌺 गणपती बाप्पा मोरया 🌺</div>
+    <div class="top-sub">A little Ganesh Chaturthi celebration, just for Sanika</div>
+    <div class="temple">
+      <div class="toran">🌿 🌸 🌿 🌼 🌿 🌸 🌿</div>
+      <div class="arch">
+        <div class="spark" style="left:18%;top:20%"></div><div class="spark" style="right:18%;top:28%;animation-delay:.5s"></div>
+        <div class="spark" style="left:27%;top:55%;animation-delay:.9s"></div><div class="spark" style="right:25%;top:62%;animation-delay:1.2s"></div>
+        <div class="ganesha-image-wrap">
+          <img class="ganesha-image" src="https://img.magnific.com/premium-vector/cute-baby-lord-ganesha-with-modak-mouse-cartoon-vector-illustration_1153643-525.jpg?semt=ais_hybrid&w=740&q=80" alt="Cute Lord Ganesha with modak and mouse" referrerpolicy="no-referrer" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="image-fallback">🐘</div>
+        </div>
+        <div class="modak m1">🍥</div><div class="modak m2">🍥</div>
+      </div>
+      <div class="diya-row"><div class="diya" id="diya1">🪔</div><div class="diya lit" id="diya2">🪔</div><div class="diya" id="diya3">🪔</div></div>
+      <div class="status" id="status">Tap the diyas to light them 🪔</div>
+    </div>
+    <div class="final-card"><h2>Dear Sanika ❤️</h2><p>Being away from home during Ganesh Chaturthi can make the festival feel a little different. But home is not only a place — it is the people, memories, prayers and love you carry with you.</p><p>May <b>Ganpati Bappa</b> bless you with happiness, success and strength throughout your CDAC journey and beyond.</p><div class="bappa">🐘 Ganpati Bappa Morya! 🌺</div><div>— From your friend, with a little bit of home ❤️</div></div>
+    <div class="footer">Made with ❤️, flowers 🌸 and lots of Bappa's blessings.</div>
+  </div>
+</section>
+
+<script>
+(() => {
+  const $ = id => document.getElementById(id);
+  const welcome = $('welcome'), puja = $('puja'), status = $('status');
+  const devotionalAudio = $('devotionalAudio');
+
+  let audioCtx;
+  function sound(){try{audioCtx=audioCtx||new(window.AudioContext||window.webkitAudioContext)();const n=audioCtx.currentTime,o=audioCtx.createOscillator(),g=audioCtx.createGain();o.frequency.setValueAtTime(620,n);o.frequency.exponentialRampToValueAtTime(900,n+.12);g.gain.setValueAtTime(.0001,n);g.gain.exponentialRampToValueAtTime(.13,n+.02);g.gain.exponentialRampToValueAtTime(.0001,n+1);o.connect(g);g.connect(audioCtx.destination);o.start(n);o.stop(n+1.1)}catch(e){}}
+  function petal(){const p=document.createElement('div');p.className='petal';p.textContent=['🌸','🌺','🌼','✨'][Math.floor(Math.random()*4)];p.style.left=Math.random()*100+'vw';p.style.setProperty('--x',(Math.random()*220-110)+'px');p.style.animationDuration=(5+Math.random()*6)+'s';p.style.fontSize=(14+Math.random()*14)+'px';$('petals').appendChild(p);setTimeout(()=>p.remove(),12000)}
+  setInterval(petal,700);
+  function burst(){for(let i=0;i<28;i++)setTimeout(petal,i*40)}
+
+  function startAarti(){
+    // Keep the actual audio element in the user gesture path for autoplay.
+    devotionalAudio.currentTime=0;
+    const p=devotionalAudio.play();
+    if(p) p.catch(()=>{status.textContent='🎵 Tap the browser audio control if playback is blocked.';});
+  }
+
+  $('beginBtn').addEventListener('click',()=>{
+    sound(); welcome.classList.add('hidden'); puja.classList.remove('hidden'); burst(); startAarti();
+    status.textContent='🎵 Devotional audio is playing. Ganpati Bappa Morya! 🙏';
+  });
+  // Audio continues while the Puja screen is open.
+  window.addEventListener('beforeunload',()=>{devotionalAudio.pause();});
+  ['diya1','diya2','diya3'].forEach(id=>$(id).addEventListener('click',e=>{e.currentTarget.classList.toggle('lit');sound();status.textContent='✨ Diya lit. Bappa’s blessings are with you!'}));
+})();
+</script>
+</body>
+</html>
